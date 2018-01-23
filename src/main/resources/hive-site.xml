@@ -4,7 +4,7 @@
 <configuration>
   <property>
     <name>hive.metastore.uris</name>
-    <value>thrift://fonova-hadoop0.fx01:9083</value>
+    <value>thrift://fonova-ahz-cdh09:9083,thrift://fonova-ahz-cdh10:9083</value>
   </property>
   <property>
     <name>hive.metastore.client.socket.timeout</name>
@@ -68,7 +68,7 @@
   </property>
   <property>
     <name>hive.compute.query.using.stats</name>
-    <value>true</value>
+    <value>false</value>
   </property>
   <property>
     <name>hive.vectorized.execution.enabled</name>
@@ -180,7 +180,7 @@
   </property>
   <property>
     <name>hive.zookeeper.quorum</name>
-    <value>fonova-hadoop0.fx01,fonova-hadoop1.fx01,fonova-hadoop2.fx01</value>
+    <value>fonova-ahz-cdh01,fonova-ahz-cdh02,fonova-ahz-cdh09</value>
   </property>
   <property>
     <name>hive.zookeeper.client.port</name>
@@ -192,7 +192,7 @@
   </property>
   <property>
     <name>hbase.zookeeper.quorum</name>
-    <value>fonova-hadoop0.fx01,fonova-hadoop1.fx01,fonova-hadoop2.fx01</value>
+    <value>fonova-ahz-cdh01,fonova-ahz-cdh02,fonova-ahz-cdh09</value>
   </property>
   <property>
     <name>hbase.zookeeper.property.clientPort</name>
@@ -204,7 +204,7 @@
   </property>
   <property>
     <name>hive.server2.enable.doAs</name>
-    <value>false</value>
+    <value>true</value>
   </property>
   <property>
     <name>hive.metastore.sasl.enabled</name>
@@ -216,11 +216,11 @@
   </property>
   <property>
     <name>hive.metastore.kerberos.principal</name>
-    <value>hive/_HOST@FONOVA.COM</value>
+    <value>hive/_HOST@FONOVA_AHZ.COM</value>
   </property>
   <property>
     <name>hive.server2.authentication.kerberos.principal</name>
-    <value>hive/_HOST@FONOVA.COM</value>
+    <value>hive/_HOST@FONOVA_AHZ.COM</value>
   </property>
   <property>
     <name>spark.shuffle.service.enabled</name>

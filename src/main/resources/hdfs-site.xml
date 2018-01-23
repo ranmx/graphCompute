@@ -16,43 +16,43 @@
   </property>
   <property>
     <name>ha.zookeeper.quorum</name>
-    <value>fonova-hadoop0.fx01:2181,fonova-hadoop1.fx01:2181,fonova-hadoop2.fx01:2181</value>
+    <value>fonova-ahz-cdh01:2181,fonova-ahz-cdh02:2181,fonova-ahz-cdh09:2181</value>
   </property>
   <property>
     <name>dfs.ha.namenodes.nsha</name>
-    <value>namenode33,namenode48</value>
+    <value>namenode61,namenode63</value>
   </property>
   <property>
-    <name>dfs.namenode.rpc-address.nsha.namenode33</name>
-    <value>fonova-hadoop0.fx01:8020</value>
+    <name>dfs.namenode.rpc-address.nsha.namenode61</name>
+    <value>fonova-ahz-cdh09:8020</value>
   </property>
   <property>
-    <name>dfs.namenode.servicerpc-address.nsha.namenode33</name>
-    <value>fonova-hadoop0.fx01:8022</value>
+    <name>dfs.namenode.servicerpc-address.nsha.namenode61</name>
+    <value>fonova-ahz-cdh09:8022</value>
   </property>
   <property>
-    <name>dfs.namenode.http-address.nsha.namenode33</name>
-    <value>fonova-hadoop0.fx01:50070</value>
+    <name>dfs.namenode.http-address.nsha.namenode61</name>
+    <value>fonova-ahz-cdh09:50070</value>
   </property>
   <property>
-    <name>dfs.namenode.https-address.nsha.namenode33</name>
-    <value>fonova-hadoop0.fx01:50470</value>
+    <name>dfs.namenode.https-address.nsha.namenode61</name>
+    <value>fonova-ahz-cdh09:50470</value>
   </property>
   <property>
-    <name>dfs.namenode.rpc-address.nsha.namenode48</name>
-    <value>fonova-hadoop1.fx01:8020</value>
+    <name>dfs.namenode.rpc-address.nsha.namenode63</name>
+    <value>fonova-ahz-cdh10:8020</value>
   </property>
   <property>
-    <name>dfs.namenode.servicerpc-address.nsha.namenode48</name>
-    <value>fonova-hadoop1.fx01:8022</value>
+    <name>dfs.namenode.servicerpc-address.nsha.namenode63</name>
+    <value>fonova-ahz-cdh10:8022</value>
   </property>
   <property>
-    <name>dfs.namenode.http-address.nsha.namenode48</name>
-    <value>fonova-hadoop1.fx01:50070</value>
+    <name>dfs.namenode.http-address.nsha.namenode63</name>
+    <value>fonova-ahz-cdh10:50070</value>
   </property>
   <property>
-    <name>dfs.namenode.https-address.nsha.namenode48</name>
-    <value>fonova-hadoop1.fx01:50470</value>
+    <name>dfs.namenode.https-address.nsha.namenode63</name>
+    <value>fonova-ahz-cdh10:50470</value>
   </property>
   <property>
     <name>dfs.replication</name>
@@ -104,14 +104,18 @@
   </property>
   <property>
     <name>dfs.namenode.kerberos.principal</name>
-    <value>hdfs/_HOST@FONOVA.COM</value>
+    <value>hdfs/_HOST@FONOVA_AHZ.COM</value>
   </property>
   <property>
     <name>dfs.namenode.kerberos.internal.spnego.principal</name>
-    <value>HTTP/_HOST@FONOVA.COM</value>
+    <value>HTTP/_HOST@FONOVA_AHZ.COM</value>
   </property>
   <property>
     <name>dfs.datanode.kerberos.principal</name>
-    <value>hdfs/_HOST@FONOVA.COM</value>
+    <value>hdfs/_HOST@FONOVA_AHZ.COM</value>
+  </property>
+  <property>
+    <name>dfs.nfs.kerberos.principal</name>
+    <value>hdfs/_HOST@FONOVA_AHZ.COM</value>
   </property>
 </configuration>

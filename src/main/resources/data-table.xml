@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>	
+	<table name="fosundb_clean" primaryColumn="third_party_id">
+		<column refFam="EletronicID" refCol="mobile" unique="1" name="mobile" />
+		<column refFam="EletronicID" refCol="email" unique="1" name="email" />
+		<column refFam="EletronicID" refCol="dingdingID" unique="1" name="dingding_id" />
+		<column refFam="EletronicID" refCol="mac" unique="1" name="mac" />
+		<column refFam="EletronicID" refCol="jid" unique="1" name="jid" />
+		<column refFam="EletronicID" refCol="imei" unique="1" name="imei" />
+
+		<column refFam="PcID" refCol="cookie" unique="1" name="cookie" />
+		
+		<column refFam="PersonalID" refCol="memberID" unique="0" name="member_id" />
+		<column refFam="PersonalID" refCol="userName" unique="0" name="user_name" />
+		<column refFam="PersonalID" refCol="citizenID" unique="1" name="citizen_id" />
+		<column refFam="PersonalID" refCol="organization" unique="-1" name="source" /> 
+					
+		<column refFam="NameSpace" refCol="realName" unique="-1" name="real_name"/>
+		<column refFam="NameSpace" refCol="thirdPartyID" unique="-1" name="third_party_id" />  	
+	</table>
+</data>
